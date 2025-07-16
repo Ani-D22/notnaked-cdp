@@ -51,8 +51,13 @@ Pseudo-code Document (data_access_logic.md): Containing the pseudo-code for data
 Mapping Document (shopify_customer_mapping.md): Describing the data mapping between your CDP and the Shopify Customer API.
 
 ## Evaluation Criteria
+
 Completeness: Have all tasks been addressed?
+
 Correctness: Is the database schema designed correctly? Does the pseudo-code implement the required functionality? Is the data mapping accurate and complete?
+
 UDM Adherence: Does the database schema follow UDM principles?
+
 Clarity and Documentation: Are the SQL script, pseudo-code, and mapping document well-commented and easy to understand?
+
 Efficiency: Is the database schema designed for efficient data access and retrieval?
