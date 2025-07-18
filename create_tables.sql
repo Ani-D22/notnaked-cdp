@@ -8,7 +8,7 @@
 CREATE TABLE party (
     party_id VARCHAR(30) PRIMARY KEY,
     party_type_id VARCHAR(30) NOT NULL, -- PERSON, ORGANIZATION
-    status_id VARCHAR(20), -- ACTIVE, INACTIVE etc.
+    status_id VARCHAR(30), -- ACTIVE, INACTIVE etc.
     from_date DATE NOT NULL,
     thru_date DATE
 );
@@ -130,7 +130,7 @@ CREATE TABLE user_preference (
     user_login_id VARCHAR(30), -- demo.user@gmail.com
     userPrefTypeId VARCHAR(30), -- javaScriptEnabled
     userPrefGroupTypeId VARCHAR(30), -- GLOBAL_PREFERENCES
-    userPrefValue VARCHAR(60), -- Y
+    userPrefValue VARCHAR(100), -- Y
     userPrefDataType VARCHAR(50),
     PRIMARY KEY (user_login_id, userPrefTypeId, userPrefGroupTypeId),
     FOREIGN KEY (user_login_id) REFERENCES user_login(user_login_id)
